@@ -1,6 +1,6 @@
-axis([-10 10 -10 10]); %%³]©w®y¼Ð¶b
+axis([-10 10 -10 10]); %%è¨­å®šåº§æ¨™è»¸
 hold on
-plot(0,0,'o');  %%¼Ð¥X­ìÂI
+plot(0,0,'o');  %%æ¨™å‡ºåŽŸé»ž
 x =[];
 y =[];
 ii = 1;
@@ -11,14 +11,14 @@ while(1)
     [a,b,button] = ginput(1);
     if abs(a) > 10
         if ii - 1 <= 2
-            warning("³o¤£¬O¥Y¦hÃä§Î");
+            warning("é€™ä¸æ˜¯å‡¸å¤šé‚Šå½¢");
             return
         end
         break
     end
     if abs(b) > 10
         if ii - 1 <= 2
-            warning("³o¤£¬O¥Y¦hÃä§Î");
+            warning("é€™ä¸æ˜¯å‡¸å¤šé‚Šå½¢");
             return
         end
         break
@@ -56,13 +56,13 @@ for aa = 1 : num - 1
 end
 
 if z == 1
-    warning("³o¤£¬O¥Y¦hÃä§Î");
+    warning("é€™ä¸æ˜¯å‡¸å¤šé‚Šå½¢");
 end
 
 
 
 if z == 0
-    for jj = 1 : num - 2 %%¾ã­Ó­±¿n
+    for jj = 1 : num - 2 %%æ•´å€‹é¢ç©
     
         A = [x(1),y(1)];
         B = [x(jj+1),y(jj+1)];
@@ -85,9 +85,9 @@ if z == 0
         end
     end
  
-    if area - Area <=10^-14
-        disp("­ìÂI¦b¦hÃä§Î¤¤")
+    if area - Area <=10^-10
+        disp("åŽŸé»žåœ¨å¤šé‚Šå½¢ä¸­")
     else
-        disp("­ìÂI¤£¦b¦hÃä§Î¤¤")
+        disp("åŽŸé»žä¸åœ¨å¤šé‚Šå½¢ä¸­")
     end
 end
